@@ -75,7 +75,7 @@
 	/******/
 	/******/
 	/******/ /******/ return __webpack_require__(
-		(__webpack_require__.s = "./index.html")
+		(__webpack_require__.s = "./src/index.html")
 	);
 	/******/
 })(
