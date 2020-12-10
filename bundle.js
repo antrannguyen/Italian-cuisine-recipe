@@ -1,4 +1,4 @@
-/******/ (function (modules) {
+/******/ (function(modules) {
 	// webpackBootstrap
 	/******/ // The module cache
 	/******/ var installedModules = {}; // The require function
@@ -35,7 +35,7 @@
 	/******/
 	/******/ /******/ __webpack_require__.c = installedModules; // define getter function for harmony exports
 	/******/
-	/******/ /******/ __webpack_require__.d = function (exports, name, getter) {
+	/******/ /******/ __webpack_require__.d = function(exports, name, getter) {
 		/******/ if (!__webpack_require__.o(exports, name)) {
 			/******/ Object.defineProperty(exports, name, {
 				/******/ configurable: false,
@@ -48,12 +48,12 @@
 		/******/
 	}; // define __esModule on exports
 	/******/
-	/******/ /******/ __webpack_require__.r = function (exports) {
+	/******/ /******/ __webpack_require__.r = function(exports) {
 		/******/ Object.defineProperty(exports, "__esModule", { value: true });
 		/******/
 	}; // getDefaultExport function for compatibility with non-harmony modules
 	/******/
-	/******/ /******/ __webpack_require__.n = function (module) {
+	/******/ /******/ __webpack_require__.n = function(module) {
 		/******/ var getter =
 			module && module.__esModule
 				? /******/ function getDefault() {
@@ -67,7 +67,7 @@
 		/******/
 	}; // Object.prototype.hasOwnProperty.call
 	/******/
-	/******/ /******/ __webpack_require__.o = function (object, property) {
+	/******/ /******/ __webpack_require__.o = function(object, property) {
 		return Object.prototype.hasOwnProperty.call(object, property);
 	}; // __webpack_public_path__
 	/******/
@@ -75,7 +75,7 @@
 	/******/
 	/******/
 	/******/ /******/ return __webpack_require__(
-		(__webpack_require__.s = "./index.js")
+		(__webpack_require__.s = "./src/index.html")
 	);
 	/******/
 })(
@@ -86,7 +86,7 @@
   !*** ./src/js/index.js ***!
   \*************************/
 			/*! no exports provided */
-			/***/ function (module, __webpack_exports__, __webpack_require__) {
+			/***/ function(module, __webpack_exports__, __webpack_require__) {
 				"use strict";
 				eval(
 					'__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./test */ "./src/js/test.js");\n// Global app controller\r\n\r\n\r\n\r\nconsole.log(`I imported ${_test__WEBPACK_IMPORTED_MODULE_0__["default"]} from another module called new number!`)\n\n//# sourceURL=webpack:///./src/js/index.js?'
@@ -100,7 +100,7 @@
   !*** ./src/js/test.js ***!
   \************************/
 			/*! exports provided: default */
-			/***/ function (module, __webpack_exports__, __webpack_require__) {
+			/***/ function(module, __webpack_exports__, __webpack_require__) {
 				"use strict";
 				eval(
 					"__webpack_require__.r(__webpack_exports__);\nconsole.log('Imported module');\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (12345);\r\n\n\n//# sourceURL=webpack:///./src/js/test.js?"
