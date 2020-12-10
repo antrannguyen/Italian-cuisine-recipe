@@ -16,13 +16,12 @@ module.exports = {
 	devServer: {
 		contentBase: "./dist",
 	},
-	plugins: [
-		new HtmlWebpackPlugin({
-			template: resolve(__dirname, "./src", "index.html"),
-			filename: "index.html",
-		}),
-	],
-	plugins: [new HtmlWebpackPlugin()],
+	// plugins: [
+	// 	new HtmlWebpackPlugin({
+	// 		template: resolve(__dirname, "src", "index.html"),
+	// 		filename: "index.html",
+	// 	}),
+	// ],
 	module: {
 		rules: [
 			{
