@@ -1,21 +1,30 @@
+"use strict";
+
+const webpack = require("webpack");
+const { join, resolve } = require("path");
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+// import d from "./dist/js/bundle";
 
 module.exports = {
-	entry: ["babel-polyfill", "./src/index.js"],
+	// entry: ["babel-polyfill", "./src/index.js"],
+	entry: join(__dirname, "src", "index.js"),
 	output: {
 		path: path.resolve(__dirname, "dist"),
-		filename: "index.js",
+		filename: "bundle.js",
 	},
 	devServer: {
 		contentBase: "./dist",
 	},
-	plugins: [
-		new HtmlWebpackPlugin({
-			filename: "index.html",
-			template: "./index.html",
-		}),
-	],
+	// plugins: [
+	// 	new HtmlWebpackPlugin({
+	// 		// filename: "index.html",
+	// 		// template: "index.html",
+	// 		template: resolve(__dirname, "./dist", "index.html"),
+	// 		filename: "index.html",
+	// 	}),
+	// ],
+	plugins: [new HtmlWebpackPlugin()],
 	module: {
 		rules: [
 			{
